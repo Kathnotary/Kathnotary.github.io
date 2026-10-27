@@ -404,11 +404,11 @@
       <thead><tr><th>Service</th><th>Price</th></tr></thead>
       <tbody>
         <tr><td>First Document<small>Affidavit, statutory declaration, travel consent letter, Sworn Statement for a Family Gift of a Used Motor Vehicle (Form 013-1157), and more. In person or by video.</small></td><td>$50</td></tr>
-        <tr><td>Each Additional Document or Signer<small>Same appointment</small></td><td>$20</td></tr>
+        <tr><td>Each Additional Document<small>Same appointment. Additional signers on the same document are free.</small></td><td>$25</td></tr>
         <tr><td>Certified True Copy (First Copy)<small>In person only. Please bring the original.</small></td><td>$50</td></tr>
         <tr><td>Each Additional Certified True Copy<small>Same appointment</small></td><td>$20</td></tr>
         <tr><td>Wills and Powers of Attorney<small>Per document. In-person witnessing, including the second witness and the affidavit of execution.</small></td><td>$115</td></tr>
-        <tr><td>Exhibit Stamp<small>Per exhibit</small></td><td>$15</td></tr>
+        <tr><td>Exhibit Stamp<small>Per exhibit</small></td><td>$20</td></tr>
         <tr><td>Appointments After 9 p.m.</td><td>+$15</td></tr>
         <tr><td>Same-Day Booking</td><td>Free</td></tr>
         <tr><td>Business Package<small>Ten commissionings, to be used within six months</small></td><td>$399</td></tr>
@@ -618,37 +618,37 @@
     affidavit: {
       name: "Affidavit", modes: IP + VID,
       bring: [UNSIGNED, ID, "Any exhibits referred to in the affidavit"],
-      price: "$50", priceNote: "First document. $20 for each additional document or signer, and $15 per exhibit stamp.",
+      price: "$50", priceNote: "First document. $25 for each additional document and $20 per exhibit stamp. Additional signers are free.",
       note: "If your affidavit is for court, check that it follows the court's required format before your appointment. " + VIDEO_TIP
     },
     statdec: {
       name: "Statutory Declaration", modes: IP + VID,
       bring: [UNSIGNED, ID],
-      price: "$50", priceNote: "First document. $20 for each additional document or signer.",
+      price: "$50", priceNote: "First document. $25 for each additional document. Additional signers are free.",
       note: VIDEO_TIP
     },
     travel: {
       name: "Travel Consent Letter", modes: IP + VID,
       bring: ["The consent letter, filled in but not signed", ID, "The child's details as shown in the letter (such as passport information)"],
-      price: "$50", priceNote: "First signer. $20 for each additional parent or guardian signing at the same appointment.",
+      price: "$50", priceNote: "Per letter. All parents or guardians signing the same letter are included.",
       note: "Some countries, airlines, or authorities require a letter signed in person or notarized. If you are unsure, please arrange an in-person appointment. " + VIDEO_TIP
     },
     vehicle: {
       name: "Sworn Statement for a Family Gift of a Used Motor Vehicle in the Province of Ontario (Form 013-1157)", modes: IP + VID,
       bring: ["Form 013-1157, filled in but not signed", ID, "Everyone who signs the form must attend"],
-      price: "$50", priceNote: "First signer. $20 for each additional signer at the same appointment.",
+      price: "$50", priceNote: "Per form. Everyone signing the same form is included.",
       note: "Used to transfer a used vehicle to an eligible family member without paying retail sales tax. " + VIDEO_TIP
     },
     ccdc: {
       name: "CCDC or Construction Statutory Declaration", modes: IP + VID,
       bring: [UNSIGNED, ID, "Your company details as they appear on the declaration"],
-      price: "$50", priceNote: "First document. $20 for each additional document or signer. Ask about our $399 business package.",
+      price: "$50", priceNote: "First document. $25 for each additional document; additional signers are free. Ask about our $399 business package.",
       note: VIDEO_TIP
     },
     government: {
       name: "Government or Immigration Form", modes: IP + VID,
       bring: [UNSIGNED, ID, "Any instructions from the receiving authority"],
-      price: "$50", priceNote: "First document. $20 for each additional document or signer.",
+      price: "$50", priceNote: "First document. $25 for each additional document. Additional signers are free.",
       note: "Some government documents must be signed in person, depending on the document type or the authority receiving it. Please check the form's instructions; if it cannot be completed by video, we will arrange an in-person appointment."
     },
     ctc: {
