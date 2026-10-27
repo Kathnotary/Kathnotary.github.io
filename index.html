@@ -294,7 +294,7 @@
     <div>
       <div class="eyebrow-plain">Notary Public and Commissioner of Oaths</div>
       <h1>Documents signed, sealed, and sorted — in person or online.</h1>
-      <p class="lede">Kath Notary handles affidavits, statutory declarations, travel consent letters, wills, powers of attorney, and more, with secure video appointments anywhere in Ontario that you can book online, and in-person appointments in Caledon, Brampton, and Mississauga by arrangement. Same-day appointments are available, and we are rated five stars on Google.</p>
+      <p class="lede">Kath Notary handles affidavits, statutory declarations, travel consent letters, separation agreements, wills, powers of attorney, and more, with secure video appointments anywhere in Ontario that you can book online, and in-person appointments in Caledon, Brampton, and Mississauga by arrangement. Same-day appointments are available, and we are rated five stars on Google.</p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="https://calendar.app.google/7yYiLiB6weFTLuBg7" target="_blank" rel="noopener">Book a Video Appointment</a>
         <a class="btn btn-ghost" href="https://wa.me/14372282684?text=Hi%20Kath%20Notary%2C%20I%27d%20like%20to%20arrange%20an%20in-person%20appointment." target="_blank" rel="noopener">Arrange In Person</a>
@@ -339,6 +339,10 @@
       <div class="service-row">
         <div><h3>Wills and Powers of Attorney</h3><div class="modes"><span class="mode mode-in">In Person</span></div></div>
         <p>In-person witnessing of wills and powers of attorney, with two witnesses present, as Ontario law requires. The second witness and the affidavit of execution are included. We witness signatures only; we do not draft wills or powers of attorney, nor do we give legal advice on them.</p>
+      </div>
+      <div class="service-row">
+        <div><h3>Separation Agreements</h3><div class="modes"><span class="mode mode-in">In Person</span><span class="mode mode-video">Video</span></div></div>
+        <p>Witnessing of both spouses' signatures on your separation agreement, in person or by secure video. We witness signatures only; we do not draft separation agreements or give legal advice on them. Each spouse should get independent legal advice from a lawyer before signing.</p>
       </div>
       <div class="service-row">
         <div><h3>Sworn Statement for a Family Gift of a Used Motor Vehicle in the Province of Ontario</h3><div class="modes"><span class="mode mode-in">In Person</span><span class="mode mode-video">Video</span></div></div>
@@ -386,6 +390,7 @@
       <button type="button" class="doc-pick" data-doc="ccdc" aria-pressed="false">CCDC or Construction Declaration</button>
       <button type="button" class="doc-pick" data-doc="government" aria-pressed="false">Government or Immigration Form</button>
       <button type="button" class="doc-pick" data-doc="ctc" aria-pressed="false">Certified True Copy</button>
+      <button type="button" class="doc-pick" data-doc="separation" aria-pressed="false">Separation Agreement</button>
       <button type="button" class="doc-pick" data-doc="wills" aria-pressed="false">Will or Power of Attorney</button>
       <button type="button" class="doc-pick" data-doc="other" aria-pressed="false">Something Else / Not Sure</button>
     </div>
@@ -408,6 +413,8 @@
         <tr><td>Certified True Copy (First Copy)<small>In person only. Please bring the original.</small></td><td>$50</td></tr>
         <tr><td>Each Additional Certified True Copy<small>Same appointment</small></td><td>$20</td></tr>
         <tr><td>Wills and Powers of Attorney<small>Per document. In-person witnessing, including the second witness and the affidavit of execution.</small></td><td>$115</td></tr>
+        <tr><td>Separation Agreement<small>Per agreement. Witnessing of both spouses' signatures, in person or by video. We do not draft agreements.</small></td><td>$75</td></tr>
+        <tr><td>Witness Provided<small>If your document needs an additional witness, we can provide one.</small></td><td>$10</td></tr>
         <tr><td>Exhibit Stamp<small>Per exhibit</small></td><td>$20</td></tr>
         <tr><td>Appointments After 9 p.m.</td><td>+$15</td></tr>
         <tr><td>Same-Day Booking</td><td>Free</td></tr>
@@ -502,7 +509,7 @@
     <div class="faq-list">
       <details>
         <summary>What can be done by video, and what needs to be in person?</summary>
-        <p>Affidavits, statutory declarations, travel consent letters, the Sworn Statement for a Family Gift of a Used Motor Vehicle (Form 013-1157), and similar sworn documents can be commissioned by secure video anywhere in Ontario. Wills, powers of attorney, and notarizations, including certified true copies, are completed in person.</p>
+        <p>Affidavits, statutory declarations, travel consent letters, the Sworn Statement for a Family Gift of a Used Motor Vehicle (Form 013-1157), and similar sworn documents can be commissioned by secure video anywhere in Ontario, and separation agreements can be witnessed by video. Wills, powers of attorney, and notarizations, including certified true copies, are completed in person.</p>
       </details>
       <details>
         <summary>Will my document be accepted if it is done by video?</summary>
@@ -530,7 +537,7 @@
       </details>
       <details>
         <summary>Can you draft my will or give me legal advice about my document?</summary>
-        <p>No. Kath Notary confirms your identity and that you understand what you are signing, and then witnesses or commissions your signature. We do not draft wills, powers of attorney, or other documents, nor do we give legal advice on their content. Please have your will or power of attorney prepared before your appointment.</p>
+        <p>No. Kath Notary confirms your identity and that you understand what you are signing, and then witnesses or commissions your signature. We do not draft wills, powers of attorney, separation agreements, or other documents, nor do we give legal advice on their content. Please have your will or power of attorney prepared before your appointment.</p>
       </details>
       <details>
         <summary>How is my information kept private?</summary>
@@ -656,6 +663,12 @@
       bring: ["The original document (we cannot certify from a copy)", "Valid, unexpired government photo ID"],
       price: "$50", priceNote: "First copy. $20 for each additional copy at the same appointment.",
       note: "Certified true copies are notarizations and must be completed in person."
+    },
+    separation: {
+      name: "Separation Agreement", modes: IP + VID,
+      bring: ["Your completed separation agreement, not signed (we do not draft agreements)", "Valid, unexpired government photo ID for each spouse", "For video: each spouse needs their own email address to sign"],
+      price: "$75", priceNote: "Per agreement, witnessing both spouses' signatures. Need an additional witness? We can provide one for $10.",
+      note: "We witness signatures only and do not draft agreements or give legal advice. Each spouse should get independent legal advice from a lawyer before signing. " + VIDEO_TIP
     },
     wills: {
       name: "Will or Power of Attorney", modes: IP,
